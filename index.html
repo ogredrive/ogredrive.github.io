@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ogredrive</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <div class="fixed-top">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link brand" href="#top">OGREDRIVE</a>
+        </li>
+      </ul>
+      <ul class="nav justify-content-center nav-bottom">
+        <li class="nav-item">
+          <a class="nav-link" href="#mods">MODS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#commands">COMMANDS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#download">DOWNLOAD</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="wrapper row" id="top">
+    </div>
+    <div class="heading justify-content-center row" id="mods">
+      <h1>MODS</h1>
+    </div>
+    <div class="mods row justify-content-center">
+      <div class="cell">
+        <ul>
+          <li>AirWalk</li>
+          <li>BlockOutline</li>
+          <li>CameraNoClip</li>
+          <li>CrossHair</li>
+          <li>Dolphin</li>
+          <li>FastPlace</li>
+          <li>Flight <span class="gold">NORMAL | CREATIVE | NCP</span></li>
+          <li>FullBright</li>
+          <li>ItemESP</li>
+          <li>InvWalk</li>
+        </ul>
+      </div>
+      <div class="cell">
+        <ul>
+          <li>ItemESP</li>
+          <li>KillAura</li>
+          <li>MobESP</li>
+          <li>NoBreakDelay</li>
+          <li>NoFall</li>
+          <li>NoWeb</li>
+          <li>PlayerESP</li>
+          <li>Rainbow</li>
+          <li>Sneak <span class="gold">PACKET | LEGIT</span></li>
+          <li>Sprint</li>
+        </ul>
+      </div>
+      <div class="cell">
+        <ul>
+          <li>Step <span class="gold">NORMAL | LEGIT</span></li>
+          <li>StorageESP</li>
+          <li>Tracers <span class="gold">MOB | PLAYER | BOTH</span></li>
+          <li>Velocity</li>
+          <li>VineClimb</li>
+        </ul>
+      </div>
+    </div>
+    <div class="heading justify-content-center row" id="commands">
+      <h1>COMMANDS</h1>
+    </div>
+    <div class="commands row justify-content-center">
+      <div class="cell">
+        <ul>
+          <li>.<span class="gold">&lt;MOD&gt; &lt;MODE&gt;</span></li>
+          <li>.<span class="gold">&lt;MOD&gt; &lt;ENABLE|ON&gt;</span></li>
+          <li>.<span class="gold">&lt;MOD&gt; &lt;DISABLE|OFF&gt;</span></li>
+          <li>.<span class="gold">&lt;MOD&gt; &lt;TOGGLE&gt;</span></li>
+          <li>.Enable <span class="gold">&lt;MOD&gt;</span></li>
+          <li>.Disable <span class="gold">&lt;MOD&gt;</span></li>
+          <li>.Toggle <span class="gold">&lt;MOD&gt;</span></li>
+          <li>.Mode <span class="gold">&lt;MOD&gt; &lt;MODE&gt;</span></li>
+          <li>.Say <span class="gold">&lt;MESSAGE&gt;</span></li>
+          <li>.Flight <span class="gold">&lt;SPEED&gt;</span></li>
+          <li>.Step <span class="gold">&lt;HEIGHT&gt;</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="heading justify-content-center row" id="download">
+      <h1>DOWNLOAD</h1>
+    </div>
+    <div class="wrapper justify-content-center">
+      <h2>Ogredrive is still in early development</h2>
+      <h5>You can download the client <a href="https://github.com/ogredrive/Ogredrive/releases" target="_blank">HERE</a></h5>
+      <h5>If you expirence any issues please create a new issue <a href="https://github.com/ogredrive/Ogredrive/issues" target="_blank">HERE</a></h5>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="/js/index.js" charset="utf-8"></script>
+
+    <script type="text/javascript">
+    // handle links with @href started with '#' only
+$(document).on('click', 'a[href^="#"]', function(e) {
+  // target element id
+  var id = $(this).attr('href');
+
+  // target element
+  var $id = $(id);
+  if ($id.length === 0) {
+      return;
+  }
+
+  // prevent standard hash navigation (avoid blinking in IE)
+  e.preventDefault();
+
+  // top position relative to the document
+  var pos = $id.offset().top;
+
+  // animated top scrolling
+  $('body, html').animate({scrollTop: pos-128});
+});
+    </script>
+  </body>
+</html>
